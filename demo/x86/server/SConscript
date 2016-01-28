@@ -1,0 +1,8 @@
+server = {
+# C global defines
+	'defines' : [
+		('EMB6_INIT_ROOT',1),
+	],
+}
+
+Return('server')

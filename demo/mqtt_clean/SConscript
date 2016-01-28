@@ -1,0 +1,27 @@
+mqtt_clean = {
+	'demo' : [
+	],
+	'emb6' : [
+		'mqtt',
+		'rpl',
+		'ipv6',
+		'sicslowpan',
+		'nullmac',
+		'llsec',
+		'802154framer',
+	],
+	'utils' : [
+		'*',
+	],
+# C global defines
+	'defines' : [
+		('DEMO_USE_MQTT_CLEAN',1),
+		('USE_BOOTSTRAP_SERVER',0),
+		('NET_USE_RPL',1),
+	],
+# GCC flags
+	'cflags' : [
+	]	
+}
+
+Return('mqtt_clean')

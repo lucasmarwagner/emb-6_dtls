@@ -1,0 +1,26 @@
+aptb_srv = {
+	'demo' : [
+	],
+	'emb6' : [
+		'sock',
+		'rpl',
+		'ipv6',
+		'sicslowpan',
+		'nullmac',
+		'llsec',
+		'802154framer',
+	],
+	'utils' : [
+		'*',
+	],
+# C global defines
+	'defines' : [
+		('DEMO_USE_APTB',1),
+		('NET_USE_RPL',1),
+	],
+# GCC flags
+	'cflags' : [
+	]	
+}
+
+Return('aptb_srv')
